@@ -81,7 +81,9 @@ a {
 
 .nav a,
 .contact-links a,
-.project-card a {
+.project-card a,
+.post-card a,
+.back-link {
   color: var(--accent-dark);
   text-decoration: none;
   font-weight: 700;
@@ -89,7 +91,9 @@ a {
 
 .nav a:hover,
 .contact-links a:hover,
-.project-card a:hover {
+.project-card a:hover,
+.post-card a:hover,
+.back-link:hover {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -195,6 +199,7 @@ h3 {
 .profile-panel p,
 .interest-grid p,
 .project-card p,
+.post-card p,
 .contact p,
 .principles {
   margin: 0;
@@ -244,12 +249,67 @@ h3 {
   gap: 14px;
 }
 
-.project-card {
+.project-card,
+.post-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 20px;
   align-items: center;
   padding: 22px 24px;
+}
+
+.blog-section .section-heading p {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+.post-list {
+  display: grid;
+  gap: 14px;
+}
+
+.post-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 12px 30px rgba(26, 40, 52, 0.06);
+}
+
+.post-meta,
+.article-meta {
+  color: var(--warm);
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.article {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: clamp(52px, 8vw, 96px) clamp(20px, 5vw, 42px);
+}
+
+.article h1 {
+  margin-top: 12px;
+  font-size: clamp(2.6rem, 5vw, 4.8rem);
+}
+
+.article h2 {
+  margin-top: 42px;
+  font-size: clamp(1.55rem, 2.4vw, 2.2rem);
+}
+
+.article p {
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.article .eyebrow {
+  margin-top: 28px;
+}
+
+.back-link {
+  display: inline-flex;
+  margin-bottom: 26px;
 }
 
 .split {
@@ -314,7 +374,8 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .project-card {
+  .project-card,
+  .post-card {
     grid-template-columns: 1fr;
   }
 }
@@ -324,7 +385,7 @@ h3 {
     width: 100%;
     justify-content: space-between;
     gap: 10px;
-    font-size: 0.9rem;
+    font-size: 0.84rem;
   }
 
   h1 {
@@ -338,7 +399,8 @@ h3 {
 
   .profile-panel,
   .interest-grid article,
-  .project-card {
+  .project-card,
+  .post-card {
     padding: 20px;
   }
 }

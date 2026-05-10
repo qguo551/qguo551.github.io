@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Qiwei Guo's research homepage: computational methods, data science, neurotechnology, and reproducible research tools."
+      content="Qiwei Guo's research blog on multimodal MRI, MRI physiology, brain-computer interface, and reproducible computational research."
     />
-    <title>Qiwei Guo | Research Homepage</title>
+    <title>Qiwei Guo | Research Blog</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Qiwei Guo homepage">
+      <a class="brand" href="#top" aria-label="Qiwei Guo research blog">
         <span class="brand-mark">QG</span>
         <span>Qiwei Guo</span>
       </a>
       <nav class="nav" aria-label="Primary navigation">
         <a href="#research">Research</a>
+        <a href="#blog">Blog</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -27,29 +28,35 @@
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Researcher profile</p>
-          <h1 id="hero-title">Computational research across data, cognition, and scientific tooling.</h1>
+          <p class="eyebrow">Research blog</p>
+          <h1 id="hero-title">Multimodal MRI, brain physiology, and brain-computer interface.</h1>
           <p class="lead">
-            I build and curate tools for reproducible analysis, data-driven modeling, and
-            research workflows. This page collects my public work and research directions.
+            I am a PhD candidate at the Centre for Cognitive and Brain Sciences,
+            University of Macau. My work focuses on quantitative and computational
+            approaches to understanding brain structure, brain function, and their
+            interactions.
           </p>
           <div class="hero-actions" aria-label="Profile links">
-            <a class="button primary" href="https://github.com/qguo551">GitHub</a>
-            <a class="button" href="#projects">Selected Work</a>
+            <a class="button primary" href="#blog">Read the Blog</a>
+            <a class="button" href="https://github.com/qguo551">GitHub</a>
           </div>
         </div>
         <aside class="profile-panel" aria-label="Profile summary">
           <div>
-            <span class="label">Current focus</span>
-            <p>Computational methods, research software, and data-intensive analysis.</p>
+            <span class="label">Affiliation</span>
+            <p>Centre for Cognitive and Brain Sciences, University of Macau</p>
           </div>
           <div>
-            <span class="label">Public repositories</span>
-            <p>17 repositories, including original projects and curated research toolkits.</p>
+            <span class="label">Current role</span>
+            <p>PhD Candidate</p>
           </div>
           <div>
-            <span class="label">Update status</span>
-            <p>Last refreshed from public GitHub metadata in May 2026.</p>
+            <span class="label">Research focus</span>
+            <p>Multimodal MRI, MRI physiology, and brain-computer interface</p>
+          </div>
+          <div>
+            <span class="label">Location</span>
+            <p>Macau</p>
           </div>
         </aside>
       </section>
@@ -57,29 +64,54 @@
       <section id="research" class="section" aria-labelledby="research-title">
         <div class="section-heading">
           <p class="eyebrow">Research direction</p>
-          <h2 id="research-title">Research interests</h2>
+          <h2 id="research-title">What I am building toward</h2>
         </div>
         <div class="interest-grid">
           <article>
-            <h3>Computational neuroscience and behavior</h3>
+            <h3>Multimodal MRI</h3>
             <p>
-              Public repository activity includes brain-computer interface resources,
-              eye-tracking tools, and neuroimaging-oriented codebases.
+              I am interested in how different MRI-derived measurements can be combined
+              to describe brain structure, function, and individual variability.
             </p>
           </article>
           <article>
-            <h3>Scientific computing and modeling</h3>
+            <h3>MRI physiology</h3>
             <p>
-              Work spans numerical methods, simulation workflows, and Python/R-based
-              analysis pipelines for complex data.
+              A central theme is the physiological interpretation of MRI signals and the
+              care needed when moving from image-derived features to biological claims.
             </p>
           </article>
           <article>
-            <h3>Research productivity tooling</h3>
+            <h3>Brain-computer interface</h3>
             <p>
-              Projects and forks reflect interest in automation, artificial intelligence
-              assistants, reproducible notebooks, and researcher-facing utilities.
+              I follow computational and neurotechnology approaches that connect brain
+              measurements with adaptive systems and interpretable analysis pipelines.
             </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="blog" class="section blog-section" aria-labelledby="blog-title">
+        <div class="section-heading">
+          <p class="eyebrow">Blog</p>
+          <h2 id="blog-title">Research notes and essays</h2>
+          <p>
+            This blog will collect research notes, method reflections, project updates,
+            and reading notes. Early posts are intentionally concise: they define the
+            research line before filling in the full publication and project record.
+          </p>
+        </div>
+        <div class="post-list">
+          <article class="post-card">
+            <div>
+              <p class="post-meta">May 10, 2026 · Research positioning</p>
+              <h3>Starting this research blog</h3>
+              <p>
+                A short note on the role of this site, the research themes it will track,
+                and the kind of writing that belongs here.
+              </p>
+            </div>
+            <a href="posts/2026-05-10-starting-this-research-blog.html">Read note</a>
           </article>
         </div>
       </section>
@@ -87,35 +119,26 @@
       <section id="projects" class="section" aria-labelledby="projects-title">
         <div class="section-heading">
           <p class="eyebrow">Selected work</p>
-          <h2 id="projects-title">Projects and toolkits</h2>
+          <h2 id="projects-title">Code and research tooling</h2>
         </div>
         <div class="project-list">
           <article class="project-card">
             <div>
               <h3>academicTools</h3>
               <p>
-                A public repository for academic and research utilities. This is a strong
-                candidate to document further as the main researcher-facing software entry.
+                A public repository for academic and researcher-facing utilities. It can
+                become the main software entry once its scope and maintenance status are
+                documented.
               </p>
             </div>
             <a href="https://github.com/qguo551/academicTools">Repository</a>
           </article>
           <article class="project-card">
             <div>
-              <h3>AI-Handwrite-Grader</h3>
-              <p>
-                A tool for using artificial intelligence to grade student handwriting
-                assignments and tests.
-              </p>
-            </div>
-            <a href="https://github.com/qguo551/AI-Handwrite-Grader">Repository</a>
-          </article>
-          <article class="project-card">
-            <div>
               <h3>gmx</h3>
               <p>
-                A Python project that may connect to scientific simulation workflows; add
-                a verified description here when the research context is finalized.
+                A Python project kept for further review. It should remain unfeatured
+                until the research purpose, input/output contract, and status are clear.
               </p>
             </div>
             <a href="https://github.com/qguo551/gmx">Repository</a>
@@ -124,8 +147,8 @@
             <div>
               <h3>Curated research ecosystem</h3>
               <p>
-                Forked repositories include CBIG, MetaBCI, GazeVisToolbox, numerical
-                linear algebra, and other tools relevant to computational research.
+                Public repository activity includes CBIG, MetaBCI, GazeVisToolbox, and
+                numerical linear algebra resources that relate to computational research.
               </p>
             </div>
             <a href="https://github.com/qguo551?tab=repositories">All repositories</a>
@@ -133,15 +156,15 @@
         </div>
       </section>
 
-      <section class="section split" aria-labelledby="working-title">
+      <section class="section split" aria-labelledby="principles-title">
         <div>
           <p class="eyebrow">Working principles</p>
-          <h2 id="working-title">Reproducible, readable, and reusable research code.</h2>
+          <h2 id="principles-title">Careful methods before impressive-looking outputs.</h2>
         </div>
         <ul class="principles">
-          <li>Prefer transparent workflows that can be rerun and inspected.</li>
-          <li>Separate exploratory prototypes from reusable analysis code.</li>
-          <li>Use public repositories as living documentation for methods and tools.</li>
+          <li>Keep research claims tied to verified data, metadata, and assumptions.</li>
+          <li>Separate exploratory ideas from confirmatory analysis and final reporting.</li>
+          <li>Make code, parameters, and interpretation readable enough to be checked.</li>
         </ul>
       </section>
 
@@ -150,11 +173,12 @@
           <p class="eyebrow">Contact</p>
           <h2 id="contact-title">Find me online</h2>
           <p>
-            For now, GitHub is the verified contact surface. Add email, Google Scholar,
-            ORCID, institutional page, and publication links once confirmed.
+            I am based at the University of Macau. For academic contact, use the email
+            below or follow my public code and notes on GitHub.
           </p>
         </div>
         <div class="contact-links">
+          <a href="mailto:yc37620@um.edu.mo">yc37620@um.edu.mo</a>
           <a href="https://github.com/qguo551">GitHub profile</a>
           <a href="https://github.com/qguo551?tab=repositories">Repositories</a>
         </div>
@@ -162,7 +186,7 @@
     </main>
 
     <footer class="site-footer">
-      <p>© 2026 Qiwei Guo. Built as a lightweight research homepage on GitHub Pages.</p>
+      <p>© 2026 Qiwei Guo. Research blog hosted on GitHub Pages.</p>
     </footer>
   </body>
 </html>
